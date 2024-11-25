@@ -1,0 +1,109 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+}
+
+/* Card Container for Forms */
+form, .auth-options {
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Form Inputs */
+input[type="email"], input[type="password"], select {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    transition: border-color 0.3s;
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus,
+select:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Form Buttons */
+button {
+    padding: 10px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Special Buttons */
+#google-login {
+    background-color: #db4437; /* Google Red */
+}
+
+#microsoft-login {
+    background-color: #2b579a; /* Microsoft Blue */
+}
+
+#google-login:hover {
+    background-color: #b33626;
+}
+
+#microsoft-login:hover {
+    background-color: #1d3b7a;
+}
+
+/* Form Title */
+h1 {
+    font-size: 24px;
+    color: #444;
+    text-align: center;
+}
+
+/* Auth Options Section */
+.auth-options {
+    text-align: center;
+}
+
+.auth-options button {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.auth-options button + button {
+    margin-left: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    form, .auth-options {
+        width: 100%;
+    }
+}
